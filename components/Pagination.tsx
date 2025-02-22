@@ -46,13 +46,13 @@ export function Pagination({ info }: PaginationProps) {
   );
 
   return (
-    <div className="flex items-center justify-center gap-2 py-2 text-gray-100 w-full">
+    <div className="flex items-center justify-center gap-2 py-2 text-gray-100  w-full">
       {/* Previous Button */}
       <Button
         onClick={() => goToPage(currentPage - 1)}
         disabled={!info.prev}
         variant="outline"
-        className="min-w-[100px] glass text-gray-100 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover"
+        className="min-w-[100px] glass text-gray-100  border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover"
       >
         Previous
       </Button>
@@ -68,7 +68,7 @@ export function Pagination({ info }: PaginationProps) {
               'w-10 h-10 glass transition-all duration-300',
               page === currentPage
                 ? 'bg-blue-600 text-gray-200 hover:bg-blue-700 shadow-sm'
-                : 'text-gray-100 border-gray-700 hover:bg-gray-800/20 glow-hover'
+                : 'text-gray-100  border-gray-700 hover:bg-gray-800/20 glow-hover'
             )}
           >
             {page}
@@ -81,7 +81,7 @@ export function Pagination({ info }: PaginationProps) {
         onClick={() => goToPage(currentPage + 1)}
         disabled={!info.next}
         variant="outline"
-        className="min-w-[100px] glass text-gray-100 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover"
+        className="min-w-[100px] glass text-gray-100  border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover"
       >
         Next
       </Button>
