@@ -18,7 +18,6 @@ export default function CharactersPage({ initialData }: CharactersPageProps) {
     page: (router.query.page as string) || '1',
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { data, isLoading, error } = useCharacters(params, initialData);
 
   if (isLoading)
@@ -41,18 +40,18 @@ export default function CharactersPage({ initialData }: CharactersPageProps) {
     );
 
   return (
-    <div className="container">
-      <header className="fixed-header fade-in">
-        <h1 className="text-3xl font-semibold text-gray-200 tracking-wider drop-shadow-sm">
-          Rick & Morty Cosmos
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-md z-10 py-4 px-5 ">
+        <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 tracking-wider drop-shadow-sm">
+          RickApi
         </h1>
       </header>
-      <div className="main-content">
-        <section className="filters-section my-5 fade-in">
+      <div className="pt-20 pb-10 min-h-screen">
+        <section className="my-6">
           <Filters />
         </section>
-        <section className="cards-section">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="cards-section ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
             {data.results.map((character: Character) => (
               <div key={character.id} className="fade-in">
                 <CharacterCard character={character} />
@@ -61,7 +60,7 @@ export default function CharactersPage({ initialData }: CharactersPageProps) {
           </div>
         </section>
       </div>
-      <div className="fixed-pagination fade-in">
+      <div className="fixed bottom-0 left-0 w-full bg-gray-900/80 backdrop-blur-xs py-4">
         <Pagination info={data.info} />
       </div>
     </div>

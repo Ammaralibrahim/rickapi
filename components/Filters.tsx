@@ -32,8 +32,8 @@ export function Filters() {
   };
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-lg font-normal text-gray-200 tracking-wider">
+    <div className="space-y-6 w-full max-w-md mx-auto">
+      <h2 className="text-base sm:text-lg md:text-xl font-normal text-gray-200 tracking-wider text-center">
         Explore Characters
       </h2>
       <div className="space-y-4">
