@@ -16,7 +16,7 @@ const SelectTrigger = React.forwardRef<
   <SelectPrimitive.Trigger
     ref={ref}
     className={cn(
-      'glass flex h-10 w-full items-center justify-between rounded-xl border-gray-300 bg-transparent px-3 sm:px-4 py-2 text-sm sm:text-base text-gray-600 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-50 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-300 hover:bg-gray-200/20 dark:border-gray-600 dark:text-gray-300 dark:focus:ring-offset-gray-900 dark:hover:bg-gray-700/40',
+      'glass flex h-10 w-full items-center justify-between rounded-xl border-gray-300 bg-transparent px-3 sm:px-4 py-2 text-sm sm:text-base text-gray-100 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-50 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-300 hover:bg-gray-200/20 dark:border-gray-600 dark:text-gray-300 dark:focus:ring-offset-gray-900 dark:hover:bg-gray-700/40',
       className
     )}
     {...props}
@@ -35,7 +35,7 @@ const SelectContent = React.forwardRef<
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
-        'glass relative z-50 min-w-[8rem] overflow-hidden rounded-xl border-gray-300 text-gray-600 shadow-lg animate-in fade-in-80 dark:border-gray-600 dark:text-gray-200',
+        'glass relative z-50 min-w-[8rem] overflow-hidden rounded-xl border-gray-300 text-gray-100 shadow-lg animate-in fade-in-80 dark:border-gray-600 dark:text-gray-200',
         position === 'popper' && 'translate-y-1',
         className
       )}
@@ -63,7 +63,7 @@ const SelectItem = React.forwardRef<
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
-      'relative flex w-full cursor-default select-none items-center rounded-lg py-2 pl-8 pr-2 text-sm sm:text-base text-gray-600 outline-none focus:bg-gray-200/50 focus:text-gray-800 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 transition-colors duration-200 dark:text-gray-200 dark:focus:bg-gray-700/50 dark:focus:text-white',
+      'relative flex w-full cursor-default select-none items-center rounded-full py-2 pl-8 pr-2 text-sm sm:text-base text-gray-100 outline-none focus:bg-gray-200/50 focus:text-gray-800 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 transition-colors duration-200 dark:text-gray-200 dark:focus:bg-gray-700/50 dark:focus:text-white',
       className
     )}
     {...props}

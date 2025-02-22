@@ -41,7 +41,7 @@ export function Filters() {
           value={(status as string) || ''}
           onValueChange={(value) => updateFilter('status', value)}
         >
-          <SelectTrigger className="w-full glass text-gray-300 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover">
+          <SelectTrigger className="w-full glass text-gray-300 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 ">
             <SelectValue placeholder="Select Status" />
           </SelectTrigger>
           <SelectContent className="glass text-gray-300 border-gray-700">
@@ -56,7 +56,7 @@ export function Filters() {
           value={(gender as string) || ''}
           onValueChange={(value) => updateFilter('gender', value)}
         >
-          <SelectTrigger className="w-full glass text-gray-300 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover">
+          <SelectTrigger className="w-full glass text-gray-300 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 ">
             <SelectValue placeholder="Select Gender" />
           </SelectTrigger>
           <SelectContent className="glass text-gray-300 border-gray-700">
@@ -70,7 +70,7 @@ export function Filters() {
         <Button
           onClick={resetFilters}
           variant="outline"
-          className="w-full glass text-gray-300 border-gray-700 hover:bg-gray-800/20 transition-all duration-300 glow-hover"
+          className="w-full glass text-gray-300 border-gray-700  transition-all duration-300 "
         >
           Reset Filters
         </Button>
