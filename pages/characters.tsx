@@ -51,8 +51,8 @@ export default function CharactersPage({ initialData }: CharactersPageProps) {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <header className="fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-md z-10 py-4 px-5">
-        <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 tracking-wider drop-shadow-sm">
-          RickApi
+        <h1 className="text-center text-2xl sm:text-2xl md:text-3xl font-semibold text-gray-200 tracking-wider drop-shadow-sm">
+          RickAPI
         </h1>
       </header>
       <div className="pt-20 pb-10 min-h-screen">
